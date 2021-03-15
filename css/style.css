@@ -1,0 +1,47 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    background: #222222;
+    color: white;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    padding: 80px;
+    margin: 0;
+    border: none;
+    overflow: hidden;
+}
+
+p.echo {
+    position: absolute;
+    font-size: 2.225rem;
+    display: inline-block;
+    scale: 1.1;
+    opacity: 1;
+    animation-name: echo;
+    animation-duration: .7s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+
+/*  Animations  */
+
+@keyframes echo {
+    0% {
+        scale: 1.1;
+        opacity: 1;
+    }
+
+    100% {
+        scale: 0;
+        opacity: 0;
+    }
+}
